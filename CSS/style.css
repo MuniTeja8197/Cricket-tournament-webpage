@@ -1,0 +1,222 @@
+body{
+	font: 15px/1.5 Arial,Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: 'red'
+}
+
+/*Global*/
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+.button1{
+	height: 38px;
+	background: #e8491d;
+	border:0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;
+}
+
+.container h1{
+	
+	text-align: center;
+}
+
+/*Header*/
+header{
+	background: #35424a;
+	color:#ffffff;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #e8491d 3px solid;
+}
+
+header a{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+header #name{
+	float: left;
+}
+
+header #name h1{
+	margin: 0;
+}
+
+header nav{
+	float: right;
+	margin-top: 10px;
+}
+
+header .highlight, header .current a{
+	color: #e8491d;
+	font-weight:bold;
+}
+
+header a:hover{
+	color: #cccccc;
+	font-weight:bold;
+}
+
+/*showcase*/
+#showcase{
+	min-height: 400px;
+	background: url('../images/cric2.jpg') no-repeat 0;
+	text-align: center;
+	color: #ffffff;
+}
+
+#showcase h1{
+	margin-top: 100px;
+	font-size: 55px;
+	margin-bottom: 15px;
+}
+
+#showcase p{
+	font-size: 25px;
+}
+
+#participate{
+	padding:15px;
+	color:#ffffff;
+	background: #35424a;
+}
+
+#participate h1{
+	float: left;
+}
+
+#participate form{
+	float: right;
+	margin-top: 18px;
+}
+
+#participate input[type="email"]{
+	padding:4px;
+	height: 25px;
+	width: 250px;
+}
+
+/*Boxes*/
+
+#boxes{
+	margin-top: 20px;
+}
+
+#boxes .box{
+	float: left;
+	text-align: center;
+	width: 30%;
+	padding:10px;
+}
+
+#boxes .box img{
+	width: 100px;
+}
+
+/*Sidebar*/
+aside#sidebar{
+	float: right;
+	width: 30%;
+	margin-top: 2px
+}
+
+/*article*/
+article#main-col{
+	float: left;
+	width: 65%;
+}
+
+/*table*/
+caption#t1{
+	text-align: left;
+	color:#e8491d;
+	padding:20px 0 20px 0;
+	padding-left: 70px;
+}
+caption#sched{
+	text-align: left;
+	color:#e8491d;
+	padding-left: 70px;
+	padding-top: 70px;
+}
+table#teams{
+	width:1000px;
+	padding-left: 70px;
+}
+table#schedule{
+	width:1000px;
+	padding-left: 70px;
+	padding-top:20px;
+	padding-bottom: 50px;
+}
+th{
+	text-align: left bold;
+	color:#e8491d;
+}
+td{
+	text-align: center;
+}
+tr:nth-child(even){
+	background-color: #ddd;
+}
+footer {
+	padding:20px;
+	margin-top: 20px;
+	color: #ffffff;
+	background-color: #e8491d;
+	text-align: center; 
+}
+
+/*media-queries*/
+@media(max-width: 758px){
+	header #name,
+	header nav,
+	header nav li,
+	#participant h1,
+	#participant form,
+	#boxes.box,
+	article#main-col,
+	aside#sidebar{
+		float:none;
+		text-align: center;
+		width: 100%;
+    }
+
+    header {
+    	padding-bottom:20px;
+    }
+
+    #showcase h1{
+    	margin-top: 40PX;
+    }
+
+    #participant button{
+    	display: block;
+    	width: 100%;
+    }
+
+    #participant form input[type="email"]{
+    	width: 100%;
+    	margin-bottom: 5px;
+    }
+}
+
